@@ -39,5 +39,9 @@ public class Main {
 	// char x;
 	// x = next().charAt(0); armazena uma palavra, e guarda apenas o primeiro caractere da string... função charAt(0)
 	// sc.close();
+	
+	// String x;
+	// x = nextLine(); armazena frases
+	// sc.close();
 
 }
