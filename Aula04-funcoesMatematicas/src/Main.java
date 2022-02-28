@@ -29,4 +29,18 @@ public class Main {
 				
 	}
 
+	
+	// Outras funções Math
+	
+	// Math.random() - retorna um valor "aleatório" entre 0 e 1**
+	// Math.max(a, b) - retorna o maior valor entre a e b. 
+	// Math.min(a, b) - retorna o menor valor entre a e b.
+	
+	
+	
+	
+	
+	
+	
+
 }
