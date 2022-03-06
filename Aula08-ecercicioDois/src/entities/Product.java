@@ -6,7 +6,7 @@ public class Product {
 	public double price;
 	public int quantity;
 	
-	public double totalValueInStock () {
+	public double totalValueInStock() {
 		return price * quantity;
 	}
 	
@@ -16,6 +16,17 @@ public class Product {
 	
 	public void remveProducts (int quantity) {
 		this.quantity -= quantity;
+	}
+	
+	public String toString() {
+		return  "Product data: "
+				+name
+				+ ", $ "
+				+ String.format("%.2f", price) // formatando o preço com duas casas decimais
+				+ ", "
+				+ quantity
+				+ " units, TOTAL $ "
+				+ String.format("%.2f", totalValueInStock());
 	}
 
 }
