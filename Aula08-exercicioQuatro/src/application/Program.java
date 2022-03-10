@@ -12,7 +12,6 @@ public class Program {
 	Scanner sc = new Scanner (System.in);
 	
 	Employee employee = new Employee();
-	double netSalary = employee.netSalary();
 		
 	System.out.print("Name of employee: ");
 	employee.name = sc.nextLine();
@@ -26,6 +25,7 @@ public class Program {
 	System.out.println();
 	System.out.print("Wich percentage to increase salary? ");
 	double percentage = sc.nextDouble();
+	employee.increaseSalary(percentage);
 	System.out.println();
 	System.out.println(employee.toString());
 	
