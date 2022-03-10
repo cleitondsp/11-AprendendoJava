@@ -24,8 +24,9 @@ public class Program {
 	System.out.printf("Employee: " + employee.name + ", $" + employee.netSalary());
 	System.out.println();
 	System.out.print("Wich percentage to increase salary? ");
-	double percentage = sc.nextDouble();
-	employee.increaseSalary(percentage);
+	double percentage = sc.nextDouble(); 	
+	employee.increaseSalary(percentage); // diz onde quero inserir no objeto a variavel criada aqui
+	
 	System.out.println();
 	System.out.println(employee.toString());
 	
