@@ -42,10 +42,9 @@ public class Product {
 	public int getQuantity() {
 		return quantity;
 	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
+	
+	
+	
 
 	public double totalValueInStock() {
 		return price * quantity;
@@ -57,12 +56,7 @@ public class Product {
 
 	public void removeProducts(int quantity) {
 		this.quantity -= quantity;
-	}
-	
-	
-	
-	
-	
+	}	
 
 	public String toString() {
 		return  name 
