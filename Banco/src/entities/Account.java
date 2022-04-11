@@ -1,45 +1,52 @@
 package entities;
 
 public class Account {
+
+	private int number;
+	private String holder;
+	private double balance;
 	
-	private int number; // numero da conta não pode ser modificdo
-	private String titular; // pode ser modificado, quando uma pessoa se casa e muda de nome
-	private double balance;	// modifica somente com deposito ou saque
-		
-	public Account(int number, String titular) { // construtor com duas opções, sem o deposito inicial
+	public Account(int number, String holder) {
 		this.number = number;
-		this.titular = titular;
+		this.holder = holder;
 	}
 
-	public Account(int number, String titular, double initialDeposit) { // construtor com as 3 opções
+	public Account(int number, String holder, double initialDeposit) {
 		this.number = number;
-		this.titular = titular;
+		this.holder = holder;
 		deposit(initialDeposit);
 	}
 
-	public int getNumber() { // somente o get pq nao tera alteração do "Number"
+	public int getNumber() {
 		return number;
 	}
 
-	public String getTitular() {
-		return titular;
+	public String getHolder() {
+		return holder;
 	}
 
-	public void setTitular(String titular) {
-		this.titular = titular;
+	public void setHolder(String holder) {
+		this.holder = holder;
 	}
 
-	public double getBalance() { // somente o get pq só havera alteração atraves de deposito e saque
+	public double getBalance() {
 		return balance;
 	}
-	
+
 	public void deposit(double amount) {
-		balance =+ amount;
+		balance += amount;
 	}
 	
 	public void withdraw(double amount) {
-		balance -= (amount + 5);
+		balance -= amount + 5.0;
 	}
 	
-
+	public String toString() {
+		return "Account "
+				+ number
+				+ ", Holder: "
+				+ holder
+				+ ", Balance: $ "
+				+ String.format("%.2f", balance);
+	}
 }
