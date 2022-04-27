@@ -10,17 +10,13 @@ public class Program {
 		
 		String s1=sc.next();
         int x=sc.nextInt();
-        String espaco = "2";
+        String espaco = " ";
         
-        int qtdeEspacos = 11 - s1.length();
-        int carac = s1.length() + espaco.length() + 3;
-        
-        
-        System.out.println(carac);
-        System.out.println(qtdeEspacos);
+        int carac = s1.length() + 3;     
+        int qtdeEspacos = 18 - carac;    
         
         for (int j = 1; j < qtdeEspacos; j++) {
-        	espaco += espaco;
+        	espaco += " ";
         }
         
         System.out.println(s1 + espaco + String.format("%03d", x));
