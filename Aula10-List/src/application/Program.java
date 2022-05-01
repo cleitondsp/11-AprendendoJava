@@ -42,12 +42,15 @@ public class Program {
 			System.out.println( x );
 		}
 		
-		myList.removeIf(x -> x.charAt(0) == "E"); 	// removendo um item com uma condição de If
+		// myList.removeIf(x -> x.charAt(0) == "E"); 	// removendo um item com uma condição de If
 		System.out.println();
 		
-		for (String x : myList) {
-			System.out.println( x );
-		}
+		// for (String x : myList) {
+		// 	System.out.println( x );
+		// }
+		
+		System.out.println("Posição do valor Maria : " + myList.indexOf("Maria")); // Encontrando um a posição de um valor especifico - myList.indexOf()
+		System.out.println("Posição do valor Ninguem : " + myList.indexOf("Ninguem")); // Quando o valor procurado nao esta na lista, o valor retornado é -1
 		
 
 	}
